@@ -3,16 +3,34 @@
 Automating artillery azimuth and distance calculations using Excel VBA.
 
 ---
+# Operational Context
 
+During my military service, I worked in an artillery unit operating mortar systems during training exercises.
+
+<img width="353" height="452" alt="Screenshot 2026-03-25 at 3 18 07 AM" src="https://github.com/user-attachments/assets/3dbc9bcf-37ba-4154-8638-3721fc272cd1" />
+
+
+In mortar operations, accurate firing requires calculating two key values before each shot:
+
+- **Azimuth** – the direction of fire
+- **Distance** – the distance to the target
+
+These calculations were traditionally performed manually using a plotting tool.
+
+---
 # Overview
 
 During artillery operations, firing data such as **azimuth** and **range** were traditionally calculated manually using the **M17 plotting board**.
 
 The manual process involved determining the coordinates of the artillery position and the target, calculating the coordinate difference \((X, Y)\), plotting the point on the M17 board, rotating the board until the point aligned with the vertical axis, and then reading the azimuth and distance directly from the board.
 
-Although this method worked, it required several manual steps and relied on visual estimation, which could introduce small errors. In time-sensitive situations where both speed and accuracy were important, this process was inefficient.
+Although this method worked, it required several manual steps and relied on visual estimation, which could introduce small errors.
 
-To improve this workflow, I analyzed the underlying geometry of the manual process and derived a mathematical model that could produce the same results directly. I then implemented the calculation using **Excel VBA**, allowing azimuth and distance to be computed instantly from coordinate inputs.
+During training exercises, we often had to process **a large number of target coordinates within a short time window**, usually under significant time pressure. Because these exercises simulate real combat conditions, both **speed and accuracy are critical**.
+
+To improve this workflow, I analyzed the underlying geometry of the manual process and derived a mathematical model that could produce the same results directly.
+
+I then implemented the calculation using **Excel VBA**, allowing azimuth and distance to be computed instantly from coordinate inputs.
 
 ---
 
