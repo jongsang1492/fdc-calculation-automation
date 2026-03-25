@@ -29,6 +29,8 @@ The steps were:
 5. Rotate the board so that the plotted point aligns with the vertical axis.
 6. Read the **azimuth** and **distance** directly from the board scale.
 
+When using the M17 plotting board, coordinates are often scaled by a ratio (e.g., 1:2) so that the point fits within the board. The final distance reading must then be multiplied by the same ratio.
+
 This manual process required careful plotting and interpretation, and small reading errors could affect the result.
 
 ### M17 Plotting Board
